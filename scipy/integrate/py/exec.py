@@ -2,12 +2,12 @@ import main as m
 try:
     from sympy.utilities.lambdify import lambdify
 except:
-    print 'Unable to find sympy. Make sure you have downloaded sympy. See http://sympy.org/en/download.html'
+    print ('Unable to find sympy. Make sure you have downloaded sympy. See http://sympy.org/en/download.html')
 
 try:
     import json
 except:
-    print 'Unable to find json. Make sure you have downloaded json module.' 
+    print ('Unable to find json. Make sure you have downloaded json module.')
 import argparse
 import ast
 
@@ -32,7 +32,7 @@ elif operation == 'multi':
     results = m.multi_integrate(lambdify(tuple(args), func), options)
 
 try:
-    print json.JSONEncoder().encode(results)
+    print (json.JSONEncoder().encode(results))
 except Exception as e:
-    print e
-    print results
+    print (e)
+    print (results)

@@ -1,12 +1,12 @@
 try:
     from scipy import integrate as i
 except:
-    print 'Unable to find scipy library. Make sure you have downloaded scipy. See http://www.scipy.org/install.html'
+    print ('Unable to find scipy library. Make sure you have downloaded scipy. See http://www.scipy.org/install.html')
 
 try:
     import numpy as np
 except:
-    print 'Unable to find numpy library. Make sure you have downloaded numpy. See http://www.numpy.org/'
+    print ('Unable to find numpy library. Make sure you have downloaded numpy. See http://www.numpy.org/')
 
 import clean as c
 
