@@ -65,7 +65,7 @@ Engine.runPython = function(operation, a, b, cb, x, y) {
     env.PYTHONUNBUFFERED = '1';
     
     var python = spawn(
-    'C:\\Users\\Lucy\\AppData\\Local\\Programs\\Python\\Python310\\python.exe',
+    env.PYTHON_PATH,
     ['-u', __dirname + '\\..\\py\\exec.py', operation, a, b],
     {'env': env});
     var output = '';
